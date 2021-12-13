@@ -99,15 +99,7 @@ input = """
 
 test_input = """
 [({(<(())[]>[[{[]{<()<>>
-[(()[<>])]({[<{<<[]>>(
-{([(<{}[<>[]}>{[]{[(<()>
-(((({<>}<{<{<>}{[]{[]{}
-[[<[([]))<([[{}[[()]]]
-[{[{({}]{}}([{[{{{}}([]
-{<[[]]>}<{[{[{[]{()[[[]
-[<(<(<(<{}))><([]([]()
-<{([([[(<>()){}]>(<<{{
-<{([{{}}[<[[[<>{}]]]>[]]"""
+"""
 
 illegal_characters = {
     ")": 3 ,
@@ -149,9 +141,9 @@ def calc_line_score(test_input):
         open_chars = []
 
         for char in line:
-            if len(open_chars) == 0:
-                open_chars.append(char)
-                continue
+            # if len(open_chars) == 0:
+            #     open_chars.append(char)
+            #     continue
 
             if (char in open_set):
                 open_chars.append(char)
