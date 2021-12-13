@@ -6,9 +6,7 @@ input = file.readlines()
 file.close()
 
 cleaned_input = [x.strip() for x in input]
-
-bingo_numbers = cleaned_input.pop(0).split(',')
-bingo_numbers = [int(x) for x in bingo_numbers]
+bingo_numbers = [int(x) for x in cleaned_input.pop(0).split(',')]
 
 # build the bingo boards
 class Node:
