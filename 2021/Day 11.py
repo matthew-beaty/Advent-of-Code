@@ -86,8 +86,6 @@ while m < 1000:
 
 
     # reset flashes to 0
-
-
     for i, row in enumerate(temp_matrix):
         for j, num in enumerate(row):
             if temp_matrix[i][j] > 9:
